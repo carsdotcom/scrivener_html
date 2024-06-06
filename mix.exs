@@ -49,7 +49,7 @@ defmodule ScrivenerHtml.Mixfile do
     [
       {:scrivener, github: "carsdotcom/scrivener", ref: "9c8d3226"},
       {:phoenix_html, "~> 2.2 or ~> 3.0"},
-      {:phoenix, "~> 1.6.0", optional: true},
+      {:phoenix, "> 1.6.0", optional: true},
       {:plug, "~> 1.1"},
       {:ex_doc, "~> 0.19", only: :dev},
       {:earmark, "~> 1.1", only: :dev},
@@ -69,8 +69,6 @@ defmodule ScrivenerHtml.Mixfile do
       ]
     ]
   end
-
-
 
   defp aliases do
     [publish: ["hex.publish", "hex.publish docs", "tag"], tag: &tag_release/1]
