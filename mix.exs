@@ -29,7 +29,7 @@ defmodule ScrivenerHtml.Mixfile do
   # Type `mix help compile.app` for more information
   def application do
     [
-      extra_applications: [:phoenix, :phoenix_html]
+      extra_applications: [:phoenix, :phoenix_html, :scrivener]
     ]
   end
 
@@ -47,13 +47,14 @@ defmodule ScrivenerHtml.Mixfile do
   # Type `mix help deps` for more examples and options
   defp deps do
     [
-      {:scrivener, github: "carsdotcom/scrivener", ref: "9c8d3226"},
-      {:phoenix_html, "~> 2.2 or ~> 3.0"},
-      {:phoenix, "> 1.6.0", optional: true},
-      {:plug, "~> 1.1"},
-      {:ex_doc, "~> 0.19", only: :dev},
-      {:earmark, "~> 1.1", only: :dev},
-      {:dialyxir, "~> 1.1", only: [:dev], runtime: false}
+      {:scrivener, "~> 2.7"},
+      {:phoenix_html, "~> 4.2"},
+      {:phoenix_html_helpers, "~> 1.0"},
+      {:phoenix, "~> 1.7"},
+      {:plug, "~> 1.16"},
+      {:ex_doc, "~> 0.36", only: :dev},
+      {:earmark, "~> 1.4", only: :dev},
+      {:dialyxir, "~> 1.0", only: [:dev], runtime: false}
     ]
   end
 
