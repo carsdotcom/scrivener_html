@@ -738,7 +738,7 @@ defmodule Scrivener.HTMLTest do
                 "span",
                 [" class=\"", [], 34],
                 62,
-                "",
+                [],
                 60,
                 47,
                 "span",
