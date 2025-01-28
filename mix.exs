@@ -49,7 +49,7 @@ defmodule ScrivenerHtml.Mixfile do
     [
       {:scrivener, github: "carsdotcom/scrivener", ref: "09ab5c2", override: true},
       {:phoenix_html, "~> 3.1"},
-      {:phoenix, "~> 1.7"},
+      {:phoenix, "~> 1.7", optional: true},
       {:plug, "~> 1.16"},
       {:ex_doc, "~> 0.36", only: :dev},
       {:earmark, "~> 1.4", only: :dev},
