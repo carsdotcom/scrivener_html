@@ -47,7 +47,7 @@ defmodule ScrivenerHtml.Mixfile do
   # Type `mix help deps` for more examples and options
   defp deps do
     [
-      {:scrivener, github: "carsdotcom/scrivener", ref: "09ab5c2"},
+      {:scrivener, github: "carsdotcom/scrivener", ref: "09ab5c2", override: true},
       {:phoenix_html, "~> 3.1"},
       {:phoenix, "~> 1.7"},
       {:plug, "~> 1.16"},
